@@ -3,16 +3,20 @@ html{
 }
 
 
-.body{
+* {
     margin: 0;
     padding: 0;
 }
 
 .top{
     display: grid;
-    background-image: url(../img/jesus.jpg);
+    background-image: 
+        linear-gradient(to right bottom, rgba(255, 255, 0, 0.8), rgba(255, 255, 255, 0.8)),
+        url(../img/jesus.jpg);
     min-height: 450px;
     background-size: cover;
+    text-align: center;
+    font-family: sans-serif;
 }
 
 .unsub{
@@ -21,15 +25,30 @@ html{
     height: 4rem;
 }
 
+.text1{
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.text2{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+
 .learn{
-    height: 1rem;
-    width: 5rem;
-    display: block;
     text-decoration: none;
-    border-radius: 5px;
-    background-color: #222;
+    border: 1px solid white;
     color: white;
-    padding: 10px 20px 10px 20px;
-    border: 1px white solid;
-    margin: 0 auto;
+    font-size: 12px;
+    background-color: #222;
+    padding: 12px 22px 12px 22px;
+    border-radius: 5px;
+}
+
+.learn2{
+    /*margin-top: 3rem;*/
+    margin-bottom: 6rem;
 }
