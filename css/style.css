@@ -52,3 +52,42 @@ html{
     /*margin-top: 3rem;*/
     margin-bottom: 6rem;
 }
+
+.middle{
+    display: grid;
+    gap: 1px;
+    min-height: 650px;
+    grid-template-areas:
+    "offer1 offer2 offer3"
+    "offer1 offer2 offer3"
+}
+
+.offer1{
+    border: 1px solid black;
+}
+
+.offer2{
+    border: 1px solid black;
+}
+
+.offer3{
+    border: 1px solid black;
+}
+
+.imcontain1{
+    background: url(../img/crusader.jpg);
+    width: 30%;
+    background-size: cover;
+}
+
+.imcontain2{
+    background: url(../img/crusader.jpg);
+    width: 30%;
+    background-size: cover;
+}
+
+.imcontain3{
+    background: url(../img/crusader.jpg);
+    width: 30%;
+    background-size: cover;
+}
