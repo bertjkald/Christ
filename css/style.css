@@ -8,12 +8,20 @@ html{
     padding: 0;
 }
 
+body{
+    background-color: #232
+}
+
 .top{
     display: grid;
     background-image: 
         linear-gradient(to right bottom, rgba(255, 255, 0, 0.8), rgba(255, 255, 255, 0.8)),
         url(../img/jesus.jpg);
     min-height: 450px;
+    max-height: 450px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-size: cover;
     text-align: center;
     font-family: sans-serif;
@@ -56,38 +64,209 @@ html{
 .middle{
     display: grid;
     gap: 1px;
-    min-height: 650px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-height: 480px;
+    background-color: #fff;
     grid-template-areas:
     "offer1 offer2 offer3"
     "offer1 offer2 offer3"
 }
+.offer{
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
 .offer1{
-    border: 1px solid black;
+    border: 1px none black;
 }
 
 .offer2{
-    border: 1px solid black;
+    border: 1px none black;
 }
 
 .offer3{
-    border: 1px solid black;
+    border: 1px none black;
+}
+
+.offer1head{
+    margin-left: 10%;
+}
+
+.offer2head{
+    margin-left: 10%;
+}
+
+.offer3head{
+    margin-left: 10%;
 }
 
 .imcontain1{
     background: url(../img/crusader.jpg);
-    width: 30%;
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    text-align: center;
+    min-width: 200px;
 }
 
 .imcontain2{
     background: url(../img/crusader.jpg);
-    width: 30%;
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    text-align: center;
+    min-width: 200px;
 }
 
 .imcontain3{
     background: url(../img/crusader.jpg);
-    width: 30%;
     background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.text{
+    margin-top: 5%;
+    color: #666;
+    margin-left: 10%;
+}
+
+.moar{
+    text-decoration: none;
+    border: 1px solid white;
+    color: rgba(255, 170, 0, 1);
+    font-size: 12px;
+    background-color: #222;
+    padding: 12px 22px 12px 22px;
+    border-radius: 5px;
+    font-weight: 900;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30%;
+}
+
+.bottom{
+    display: grid;
+    gap: 1px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-height: 900px;
+    background-color: #fff;
+    grid-template-areas:
+    "newbeginning" "newbeginning"
+    "offer1desc" "offer1img"
+    "offer2img" "offer2desc"
+}
+
+.newbeginning{
+    background: url(../img/holyland.jpg);
+    background-size: cover;
+    min-height: 250px;
+}
+
+.newtext{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #fff;
+    margin-left: 40%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+
+.life{
+    color: rgba(255, 170, 0, 1);
+    font-family: serif;
+}
+
+.begin{
+    color: rgba(255, 170, 0, 1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.video{
+    text-decoration: none;
+    border: 1px solid white;
+    color: black;
+    font-size: 12px;
+    background-color: rgba(255, 170, 0, 1);;
+    padding: 12px 22px 12px 22px;
+    border-radius: 5px;
+    margin-right: 45%;
+    margin-left: 45%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.offer1desc{
+    border: 1px solid white;
+    text-align: center;
+}
+
+.offer1text{
+    color: #666;
+    text-align: center;
+    width: 400px;
+}
+
+.offer1img{
+    background: url(../img/crusader.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.offer2img{
+    background: url(../img/crusader.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.offer2desc{
+    border: 1px solid white;
+    text-align: center;
+}
+
+.offer2text{
+    color: #666;
+    text-align: center;
+    width: 400px;
+}
+
+.showoffer1{
+    display: grid;
+    gap: 1px;
+    min-height: 480px;
+}
+
+.showoffer2{
+    display: grid;
+    gap: 1px;
+    min-height: 480px;
+}
+
+.offerimg{
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.offerdesc{
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.holyimg1{
+    width: 400px;
+}
+
+.holyimg2{
+    width: 400px;
 }
