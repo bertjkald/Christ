@@ -28,9 +28,34 @@ body{
 }
 
 .unsub{
+    display: grid;
     background-color: #222;
+    gap: 1px;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
+    grid-template-areas: 
+    "ubsubicon" "unsubdesc" "unsubunsub"
+}
+
+.unsubicon{
+    background: url(../img/Catholic.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.unsubdesc{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.unsubunsub{
+    color: #444;
+    margin-bottom: 30px;
 }
 
 .text1{
@@ -147,14 +172,41 @@ body{
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 30%;
+    animation-name: waet1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+
+@keyframes waet1 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes waet2 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes waet3 {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.moar:hover {
+    background-color: red;
+    transform: rotateX(360deg);
+    /*transform: scale(0.1);*/
 }
 
 .bottom{
     display: grid;
-    gap: 1px;
     margin-left: 20%;
     margin-right: 20%;
     min-height: 900px;
+    margin-bottom: 20px;
     background-color: #fff;
     grid-template-areas:
     "newbeginning" "newbeginning"
@@ -200,10 +252,13 @@ body{
     margin-top: 5%;
     margin-bottom: 10%;
 }
-
+.offertable{
+    background-color: #fff;
+}
 .offer1desc{
     border: 1px solid white;
     text-align: center;
+    color: #fff;
 }
 
 .offer1text{
@@ -269,4 +324,42 @@ body{
 
 .holyimg2{
     width: 400px;
+}
+
+.alllefts{
+    display: grid;
+    background-color: #222;
+    gap: 10px;
+    width: 100%;
+    height: 4rem;
+    grid-template-rows: 
+    "icon" "allrighstext" "links"
+}
+
+.icon{
+    background: url(../img/Catholic.png);
+    width: 32px;
+    height: 32px;
+}
+
+.allrightstext{
+}
+
+.links{
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.link1{
+    background: url(../img/5296521-32.png);
+}
+
+.link2{
+    background: url(../img/reddit.png);
+}
+
+.link3{
+    background: url(../img/fbi2.png);
 }
